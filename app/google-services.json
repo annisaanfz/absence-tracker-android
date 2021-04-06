@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "260571140715",
+    "project_id": "tracker-309810",
+    "storage_bucket": "tracker-309810.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260571140715:android:d67389e1d40c9e03dd172e",
+        "android_client_info": {
+          "package_name": "com.lawencon.tracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "260571140715-alv7v77ff4rmk4f91o2ov58h894v3fj2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-1BEuk2qhbnONZMS2Dnze7oOMTcmd7kQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "260571140715-alv7v77ff4rmk4f91o2ov58h894v3fj2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_satu"
+        android:icon="@drawable/logo_map"
+        android:title="Realtime" />
+
+    <item
+        android:id="@+id/navigation_dua"
+        android:icon="@drawable/logo_realtime"
+        android:title="Report Realtime" />
+
+    <item
+        android:id="@+id/navigation_tiga"
+        android:icon="@drawable/logo_absen"
+        android:title="Report Absent" />
+
+</menu>

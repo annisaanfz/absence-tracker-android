@@ -1,4 +1,4 @@
-package com.lawencon.tracker
+package com.lawencon.tracker.ui.view
 
 import android.Manifest
 import android.content.pm.PackageManager
@@ -18,8 +18,9 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
+import com.lawencon.tracker.R
 
-class FirstFragment : Fragment(), OnMapReadyCallback {
+class RealtimeActivity : Fragment(), OnMapReadyCallback {
     private lateinit var currentLocation: Location
     private lateinit var fusedLocationProviderClient: FusedLocationProviderClient
     private val permissionCode = 101

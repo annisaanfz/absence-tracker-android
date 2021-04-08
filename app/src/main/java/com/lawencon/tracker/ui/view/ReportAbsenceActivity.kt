@@ -1,12 +1,13 @@
-package com.lawencon.tracker
+package com.lawencon.tracker.ui.view
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.lawencon.tracker.R
 
-class ThirdFragment : Fragment() {
+class ReportAbsenceActivity : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
@@ -14,8 +15,8 @@ class ThirdFragment : Fragment() {
     }
 
     companion object {
-        fun newInstance(): SecondFragment{
-            val fragment = SecondFragment()
+        fun newInstance(): ReportRealtimeActivity {
+            val fragment = ReportRealtimeActivity()
             val args = Bundle()
             fragment.arguments = args
             return fragment

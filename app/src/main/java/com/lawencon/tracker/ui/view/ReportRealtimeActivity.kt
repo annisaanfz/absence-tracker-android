@@ -1,20 +1,17 @@
-package com.lawencon.tracker
+package com.lawencon.tracker.ui.view
 
-import android.app.Activity
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageButton
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.lawencon.tracker.view.DetailTracker
-import com.lawencon.tracker.view.ReportAdapter
+import com.lawencon.tracker.R
+import com.lawencon.tracker.ui.adapter.ReportAdapter
 
 
-class SecondFragment : Fragment() {
+class ReportRealtimeActivity : Fragment() {
 
     private var layoutManager: RecyclerView.LayoutManager? = null
     private var adapter: RecyclerView.Adapter<ReportAdapter.ViewHolder>? = null

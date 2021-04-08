@@ -1,4 +1,4 @@
-package com.lawencon.tracker.model
+package com.lawencon.tracker.data.model
 
 class Roles(id : Long, code : String, name : String) {
     private var id : Long? = null

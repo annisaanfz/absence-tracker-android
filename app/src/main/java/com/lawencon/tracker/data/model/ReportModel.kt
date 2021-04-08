@@ -1,4 +1,4 @@
-package com.lawencon.tracker.model
+package com.lawencon.tracker.data.model
 
 class ReportModel(nama : String) {
     private  var nama : String? = null

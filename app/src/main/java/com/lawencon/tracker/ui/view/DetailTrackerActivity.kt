@@ -1,4 +1,4 @@
-package com.lawencon.tracker.view
+package com.lawencon.tracker.ui.view
 
 import android.os.Bundle
 import android.os.PersistableBundle
@@ -11,7 +11,7 @@ import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import com.lawencon.tracker.R
 
-class DetailTracker: AppCompatActivity(), OnMapReadyCallback {
+class DetailTrackerActivity: AppCompatActivity(), OnMapReadyCallback {
 
     private var googleMap: GoogleMap? = null
 

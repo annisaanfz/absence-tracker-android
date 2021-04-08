@@ -1,4 +1,4 @@
-package com.lawencon.tracker.model
+package com.lawencon.tracker.data.model
 
 class Location(latitude : Double, longitude : Double) {
     private var latitude : Double

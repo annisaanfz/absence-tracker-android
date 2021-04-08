@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.lawencon.tracker">
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.INTERNET" />
     <application
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -19,10 +21,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SecondActivity"
+        <activity android:name=".ui.view.MenuActivity"
             android:label="TrackerApp">
         </activity>
-        <activity android:name=".view.DetailTracker"
+        <activity android:name=".ui.view.DetailTrackerActivity"
+            android:label="TrackerApp">
+        </activity>
+        <activity android:name=".ui.view.LoginActivity"
+            android:label="TrackerApp">
+        </activity>
+        <activity android:name=".ui.view.AbsenceActivity"
             android:label="TrackerApp">
         </activity>
         <meta-data

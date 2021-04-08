@@ -1,4 +1,4 @@
-package com.lawencon.tracker.view
+package com.lawencon.tracker.ui.adapter
 
 import android.content.Intent
 import android.view.LayoutInflater
@@ -8,7 +8,8 @@ import android.widget.ImageButton
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.lawencon.tracker.R
-import com.lawencon.tracker.SecondFragment
+import com.lawencon.tracker.ui.view.ReportRealtimeActivity
+import com.lawencon.tracker.ui.view.DetailTrackerActivity
 
 class ReportAdapter : RecyclerView.Adapter<ReportAdapter.ViewHolder>() {
 
@@ -24,7 +25,7 @@ class ReportAdapter : RecyclerView.Adapter<ReportAdapter.ViewHolder>() {
             itemView.setOnClickListener {
                 var position: Int = getAdapterPosition()
                 val context = itemView.context
-                val intent = Intent(context, SecondFragment::class.java).apply {
+                val intent = Intent(context, ReportRealtimeActivity::class.java).apply {
                     putExtra("NUMBER", position)
                     putExtra("NAMA", itemNama.text)
                 }
@@ -38,7 +39,7 @@ class ReportAdapter : RecyclerView.Adapter<ReportAdapter.ViewHolder>() {
         val context = v.context
         val imageButton: ImageButton = v.findViewById(R.id.imageButton)
         imageButton.setOnClickListener() {
-            val i = Intent(context, DetailTracker::class.java)
+            val i = Intent(context, DetailTrackerActivity::class.java)
                 context.startActivity(i)
             }
         return ViewHolder(v)

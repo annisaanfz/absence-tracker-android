@@ -1,28 +1,29 @@
-package com.lawencon.tracker
+package com.lawencon.tracker.ui.view
 
 import android.os.Bundle
 import android.widget.FrameLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.lawencon.tracker.R
 
-class SecondActivity : AppCompatActivity() {
+class MenuActivity : AppCompatActivity() {
     private var content: FrameLayout? = null
 
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
             R.id.navigation_satu -> {
-                val fragment = FirstFragment()
+                val fragment = RealtimeActivity()
                 addFragment(fragment)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_dua -> {
-                val fragment = SecondFragment()
+                val fragment = ReportRealtimeActivity()
                 addFragment(fragment)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_tiga -> {
-                val fragment = ThirdFragment()
+                val fragment = ReportAbsenceActivity()
                 addFragment(fragment)
                 return@OnNavigationItemSelectedListener true
             }
@@ -33,7 +34,10 @@ class SecondActivity : AppCompatActivity() {
     private fun addFragment(fragment: Fragment) {
         supportFragmentManager
             .beginTransaction()
-            .setCustomAnimations(R.anim.design_bottom_sheet_slide_in, R.anim.design_bottom_sheet_slide_out)
+            .setCustomAnimations(
+                R.anim.design_bottom_sheet_slide_in,
+                R.anim.design_bottom_sheet_slide_out
+            )
             .replace(R.id.content, fragment, fragment.javaClass.getSimpleName())
             .commit()
     }
@@ -43,7 +47,7 @@ class SecondActivity : AppCompatActivity() {
         setContentView(R.layout.activity_second)
         val navigation = findViewById<BottomNavigationView>(R.id.navigation)
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
-        val fragment = FirstFragment()
+        val fragment = RealtimeActivity()
         addFragment(fragment)
 
     }

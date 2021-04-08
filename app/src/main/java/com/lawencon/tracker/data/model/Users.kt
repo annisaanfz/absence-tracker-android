@@ -1,6 +1,6 @@
-package com.lawencon.tracker.model
+package com.lawencon.tracker.data.model
 
-import java.util.*
+import com.lawencon.tracker.data.model.Roles
 
 class Users() {
     var id: Long? = null
